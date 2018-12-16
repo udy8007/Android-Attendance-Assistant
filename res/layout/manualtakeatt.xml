@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/xax"
+    tools:context="com.example.admin.attendanceassistant.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Graduate"
+        android:id="@+id/textView14"
+        android:textStyle="bold"
+
+        android:paddingTop="10dp"
+        android:typeface="serif"
+        android:layout_below="@+id/textView17"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_marginTop="69dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grad"
+        android:spinnerMode="dropdown"
+        android:entries="@array/gra"
+        android:layout_alignTop="@+id/textView14"
+        android:layout_alignLeft="@+id/subeditText"
+        android:layout_alignStart="@+id/subeditText"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Year"
+        android:id="@+id/textView15"
+        android:textStyle="bold"
+        android:paddingTop="1dp"
+        android:textColor="@android:color/white"
+        android:paddingLeft="15dp"
+        android:layout_alignTop="@+id/year"
+        android:layout_alignRight="@+id/textView23"
+        android:layout_alignEnd="@+id/textView23"
+        android:typeface="serif" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/year"
+
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/grad"
+        android:layout_alignLeft="@+id/grad"
+        android:layout_alignStart="@+id/grad"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        android:id="@+id/c1bt1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Subject"
+        android:id="@+id/textView16"
+        android:textStyle="bold"
+        android:paddingTop="1dp"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/white"
+
+        android:layout_alignTop="@+id/subeditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Period"
+        android:id="@+id/textView23"
+        android:textStyle="bold"
+        android:paddingTop="1dp"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/white"
+        android:typeface="serif"
+        android:layout_below="@+id/year"
+        android:layout_alignRight="@+id/textView16"
+        android:layout_alignEnd="@+id/textView16"
+        android:layout_marginTop="49dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:spinnerMode="dropdown"
+        android:layout_alignBaseline="@+id/textView23"
+        android:layout_alignBottom="@+id/textView23"
+        android:layout_alignLeft="@+id/year"
+        android:layout_alignStart="@+id/year" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=" "
+        android:ems="10"
+        android:id="@+id/subeditText"
+        android:width="150dp"
+        android:typeface="serif"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/txtdate"
+        android:layout_alignLeft="@+id/txtdate"
+        android:layout_alignStart="@+id/txtdate"
+      />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Touch here to select a date"
+        android:ems="10"
+        android:id="@+id/txtdate"
+        android:width="150dp"
+        android:layout_above="@+id/c1bt1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="29dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:paddingTop="1dp"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/white"
+        android:layout_alignBottom="@+id/txtdate"
+        android:layout_alignRight="@+id/textView23"
+        android:layout_alignEnd="@+id/textView23"
+        android:layout_alignParentLeft="true"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Take Attendance"
+        android:id="@+id/textView17"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+
+</RelativeLayout>

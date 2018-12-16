@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.attendanceassistant">
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.SEND_SMS" />
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".maintakeActivity"/>
+        <activity android:name=".qrtakeActivity"/>
+        <activity android:name=".addtime1"/>
+        <activity android:name=".addtime2"/>
+        <activity android:name=".addtime3"/>
+        <activity android:name=".addtime4"/>
+        <activity android:name=".addtime5"/>
+        <activity android:name=".addtime6"/>
+        <activity android:name=".classwise"/>
+        <activity android:name=".classwise2"/>
+        <activity android:name=".bello_class"/>
+        <activity android:name=".above_class"/>
+        <activity android:name=".faculty1"/>
+        <activity android:name=".faculty2"/>
+        <activity android:name=".facultypoActivity"/>
+        <activity android:name=".indualActivity"/>
+        <activity android:name=".loadatt"/>
+        <activity android:name=".studentpro1Activity"/>
+        <activity android:name=".studentpro2Activity"/>
+        <activity android:name=".studentproActivity"/>
+        <activity android:name=".takeActivity"/>
+        <activity android:name=".timetableActivity"/>
+        <activity android:name=".viewActivity"/>
+        <activity android:name=".alam"/>
+        <activity android:name=".viewtimetableActivity1"/>
+        <receiver android:name=".AlarmReceiver" />
+    </application>
+
+</manifest>
